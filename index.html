@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Raleway&family=Roboto:wght@400;500;700;900&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <!-- <link rel="stylesheet" href="">      ШРИФТЫ -->
     <link rel="stylesheet" href="./css/styles.css">
 </head>
@@ -37,17 +38,13 @@
     </header>
 
     <main class="original ">
-        <!-- <div class="decision-background"> -->
         <section class="decision">
-            <div class="container">
-                <div class="solutions">
+            <div class="container solutions">
                 <h1 class="solutions-title">ЭФФЕКТИВНЫЕ РЕШЕНИЯ <br> ДЛЯ ВАШЕГО БИЗНЕСА</h1>
-                <button class="btn" type="button">Заказать услугу</button>
-                </div>
-            </div>
+                <button type="button" class="btn" data-modal-open>Заказать услугу</button>
+             </div>
         </section>
-    <!-- </div> -->
-    <div class="principles-work-background">
+             
         <section class="principles">
             <div class="container our-quality">
                 <ul class="principles-list">
@@ -99,14 +96,32 @@
         <div class="container types-jobs">
             <h2 class="work-title">Чем мы занимаемся</h2>
             <ul class="work-list">
-                <li class="work-img"><img class="work-photo" src="./images/3.img" alt="" width="370" height="294"></li>
-                <li class="work-img"><img class="work-photo" src="./images/1.img" alt="" width="370" height="294"></li>
-                <li class="work-img"><img class="work-photo" src="./images/2.img" alt="" width="370" height="294"></li>
+                <li class="work-img">
+                    <div class="work-thumb">
+                    <img class="work-photo" src="./images/3.img" alt="" width="370" height="294">
+                    <p class="work-description">Десктопные приложения</p>
+
+                    </div>
+                </li>
+                <li class="work-img">
+                    <div class="work-thumb">
+                        <img class="work-photo" src="./images/1.img" alt="" width="370" height="294">
+                        <p class="work-description">Мобильные приложения</p>
+
+                    </div> 
+                </li>
+                <li class="work-img">
+                    <div class="work-thumb">
+                        <img class="work-photo" src="./images/2.img" alt="" width="370" height="294">
+                        <p class="work-description">Дизайнерские решения</p>
+
+                    </div>
+                </li>
             </ul>
         </div>
         </section>
-    </div>
-        <div class="team-background">
+    
+        
         <section class="team">
             <div class="container">
             <h2 class="team-title">Наша команда</h2>
@@ -209,8 +224,6 @@
             </ul>
             </div>
         </section>
-    </div>
-    <div class="clients-background">
         <section class="clients">
             <div class="container">
                 <h2 class="client-name">Постоянные клиенты</h2>
@@ -232,15 +245,12 @@
                 </svg></a></li>
                 <li class="clients-item"><a class=clients-link href=""><svg class="clients-logo" width="88px" height="45px">
                             <use href="./images/sprite.svg#icon-client6"></use></svg></a></li>
-                
             </ul>
-
             </div>
         </section>
-    </div>
-    </main>
+     </main>
     <footer class="footer">
-        <div class="size">
+        
         <div class="container">
             <div class="box">
                 <div class="footer-box">
@@ -275,8 +285,14 @@
                 </div>
             </div>
             </div>
-        </div>
+        
             </footer>
+            <div class="backdrop is-hidden" data-modal>
+                <div class="modal">
+                    <button type="button" class="close-btn" data-modal-close><svg class="icon-close-btn"><use href="./images/sprite.svg#icon-close-btn"></use> </svg> </button>
+                </div>
+            </div>
+            <script src="./js/modal.js"></script>
             </body>
             </html>
 
